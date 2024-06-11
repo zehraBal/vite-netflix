@@ -24,6 +24,10 @@
   color: white;
   height: 40px;
   text-align: center;
+  &:hover {
+    background-color: darkred;
+    color: beige;
+  }
 }
 .headerButton-container {
   padding: 10px;
@@ -46,4 +50,66 @@
 .loginPage-container {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/src/assets/mainpage-bg.jpg");
+  background-size: cover;
+}
+
+/*Login form*/
+.form-container {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 30px;
+  padding-right: 50px;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+.input-container {
+  width: 100%;
+  padding: 20px;
+  button {
+    width: 100%;
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    &:hover {
+      background-color: darkred;
+      color: beige;
+    }
+  }
+}
+.input-field {
+  width: 100%; /* Genişliği %100 yapar */
+  max-width: 600px; /* Maksimum genişlik */
+  height: 50px; /* Yükseklik */
+  padding: 10px; /* İç boşluk */
+  font-size: 18px; /* Yazı boyutu */
+  border: 1px solid #ccc; /* Kenarlık */
+  border-radius: 5px; /* Köşe yuvarlama */
+  box-sizing: border-box; /* Padding ve border'ı genişlik ve yükseklik hesaplamalarına dahil eder */
+}
+
+/*Profiles*/
+.profiles-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profiles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

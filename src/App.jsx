@@ -15,7 +15,9 @@ function App() {
       <Switch>
         <Route exact path="/" component={MainPage} />
         <Route path="/login" component={LoginPage} />
-        <Route path="/profiles" component={Profiles} />
+        <Route path="/profiles">
+          <Profiles setActiveProfile={setActiveProfile} />
+        </Route>
         <Route path="/home">
           <Header activeProfile={activeProfile} />
           <HomePage activeProfile={activeProfile} />

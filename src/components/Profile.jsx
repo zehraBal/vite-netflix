@@ -11,6 +11,8 @@ const Name = styled.h2`
 const Card = styled.div`
   width: 20%;
   max-width: 200px;
+  margin: 1rem;
+  cursor: pointer;
 `;
 export default function Profile(props) {
   const history = useHistory();
