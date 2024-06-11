@@ -1,0 +1,33 @@
+/* Header */
+
+.header {
+  width: 100vw;
+  height: 60px;
+  padding: 1rem, 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.headerButton {
+  background-color: red;
+  color: white;
+  height: 40px;
+  text-align: center;
+}
+.headerButton-container {
+  padding: 10px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Main Page*/
+.mainPage-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+/*Login Page*/
+.loginPage-container {
+  width: 100vw;
+  height: 100vh;
+}
