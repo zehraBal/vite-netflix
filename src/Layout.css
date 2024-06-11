@@ -3,10 +3,21 @@
 .header {
   width: 100vw;
   height: 60px;
-  padding: 1rem, 2rem;
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 35px,
+    rgba(0, 0, 0, 0.7) 40px,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  /* Transparan arka plan  background-color: rgba(0, 0, 0, 0.7); */
+  padding: 20px;
+  text-align: center;
+  position: fixed; /* Header'ı sabitler */
+  width: 100%;
+  top: 0;
 }
 .headerButton {
   background-color: red;
@@ -22,8 +33,13 @@
 
 /* Main Page*/
 .mainPage-container {
+  color: white;
+  padding: 0;
+  margin: 0;
   width: 100vw;
   height: 100vh;
+  background-image: url("/src/assets/mainpage-bg.jpg");
+  background-size: cover;
 }
 
 /*Login Page*/

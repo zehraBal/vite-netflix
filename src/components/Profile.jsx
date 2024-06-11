@@ -19,7 +19,7 @@ export default function Profile(props) {
 
   const handleActiveProfile = () => {
     setActiveProfile(profile);
-    history.push("");
+    history.push("/home");
   };
   return (
     <Card onClick={handleActiveProfile}>

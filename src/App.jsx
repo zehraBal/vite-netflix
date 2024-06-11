@@ -5,6 +5,7 @@ import Profiles from "./pages/Profiles";
 import Header from "./components/Header";
 import "./Layout.css";
 import { useState } from "react";
+import HomePage from "./pages/HomePage";
 
 function App() {
   const [activeProfile, setActiveProfile] = useState(null);
@@ -17,7 +18,7 @@ function App() {
         <Route path="/profiles" component={Profiles} />
         <Route path="/home">
           <Header activeProfile={activeProfile} />
-          <Home activeProfile={activeProfile} />
+          <HomePage activeProfile={activeProfile} />
         </Route>
       </Switch>
     </BrowserRouter>
