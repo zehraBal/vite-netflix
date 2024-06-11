@@ -1,21 +1,15 @@
 /* Header */
 
 .header {
+  margin: 0;
   width: 100vw;
-  height: 60px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 35px,
-    rgba(0, 0, 0, 0.7) 40px,
-    rgba(0, 0, 0, 0.7) 100%
-  );
-  /* Transparan arka plan  background-color: rgba(0, 0, 0, 0.7); */
-  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px, 80px;
   text-align: center;
-  position: fixed; /* Header'ı sabitler */
+  position: fixed;
   width: 100%;
   top: 0;
 }
@@ -25,7 +19,7 @@
   height: 40px;
   text-align: center;
   &:hover {
-    background-color: darkred;
+    background-color: rgb(221, 1, 1);
     color: beige;
   }
 }
@@ -44,6 +38,31 @@
   height: 100vh;
   background-image: url("/src/assets/mainpage-bg.jpg");
   background-size: cover;
+}
+.main-content {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-input {
+  width: 100%;
+  max-width: 300px;
+  height: 35px;
+  border: 1px rgb(82, 81, 81) solid;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.mainInputField {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 /*Login Page*/
@@ -64,7 +83,7 @@
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin-top: 30vh;
   padding: 30px;
   padding-right: 50px;
   width: 500px;
@@ -80,7 +99,7 @@
     color: white;
     border: 1px solid black;
     &:hover {
-      background-color: darkred;
+      background-color: rgb(221, 1, 1);
       color: beige;
     }
   }
