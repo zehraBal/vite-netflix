@@ -2,7 +2,7 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router-dom";
 
-export default function LoginPage() {
+export default function LoginPage({ setIsLoggedIn }) {
   const history = useHistory();
   const {
     register,
@@ -13,11 +13,14 @@ export default function LoginPage() {
   });
   const formSubmit = (formData) => {
     console.log(formData);
-    /* axios
-      .post()
-      .then()
-      .catch((err) => console.warn(err));*/
-    history.push("/profiles");
+    axios
+      .post("https://reqres.in/api/users", formData)
+      .then((res) => {
+        console.log(res.data);
+        history.push("/profiles");
+        setIsLoggedIn(true);
+      })
+      .catch((err) => console.warn(err));
   };
   return (
     <div className="loginPage-container">

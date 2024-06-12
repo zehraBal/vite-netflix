@@ -1,6 +1,9 @@
+import React from "react";
 import { useHistory } from "react-router-dom";
-export default function Header() {
+
+export default function Header({ isLoggedIn }) {
   const history = useHistory();
+
   const handleLogin = () => {
     history.push("/login");
   };
@@ -13,11 +16,13 @@ export default function Header() {
           history.push("/");
         }}
       />
-      <div className="headerButton-container">
-        <button className="headerButton" onClick={handleLogin}>
-          Sign In
-        </button>
-      </div>
+      {!isLoggedIn && (
+        <div className="headerButton-container">
+          <button className="headerButton" onClick={handleLogin}>
+            Sign In
+          </button>
+        </div>
+      )}
     </div>
   );
 }
