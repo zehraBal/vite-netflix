@@ -21,6 +21,7 @@ export default function Profile(props) {
 
   const handleActiveProfile = () => {
     setActiveProfile(profile);
+    localStorage.setItem("activeProfile", JSON.stringify(profile));
     history.push("/home");
   };
   return (

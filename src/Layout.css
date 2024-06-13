@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 /* Header */
 
 .header {
@@ -7,17 +11,39 @@
   display: flex;
   justify-content: space-between;
   background: rgba(0, 0, 0, 0.3);
-  padding: 20px, 80px;
+  padding: 2rem, 3rem;
   text-align: center;
   position: fixed;
   width: 100%;
   top: 0;
 }
+.loggedInUser {
+  color: white;
+  margin-right: 40px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+.profile-container {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+}
+
+.profile-avatar {
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .headerButton {
   background-color: red;
   color: white;
+  border-radius: 8px;
+  border: 1px solid black;
   height: 40px;
   text-align: center;
+  cursor: pointer;
   &:hover {
     background-color: rgb(221, 1, 1);
     color: beige;
@@ -69,11 +95,19 @@
 .loginPage-container {
   width: 100vw;
   height: 100vh;
+
+  background-image: url("/src/assets/mainpage-bg.jpg");
+  background-size: cover;
+}
+.transparent {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/src/assets/mainpage-bg.jpg");
-  background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /*Login form*/
@@ -83,7 +117,7 @@
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  margin-top: 30vh;
+  margin-top: 25vh;
   padding: 30px;
   padding-right: 50px;
   width: 500px;
@@ -204,4 +238,20 @@
 }
 .movie-container:hover img {
   transform: scale(1.05);
+}
+
+/*footer*/
+.footer {
+  margin: 0;
+  width: 100vw;
+  height: 30vh;
+  max-height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+.footer ul {
+  list-style: none;
 }
